@@ -1,0 +1,37 @@
+# Prompts used in Cursor
+
+1. @scraper.py Scrape only the top 5 cards with their title, image_url, category and author. The structure of html is like this: (div.category > category-inner-wrapper > category-description with h2>a, author-name, time-wrapper; category-image)
+
+2. @scraper.py Add cartoon scraping with html structure: div.section-news, h4>a to /cartoon (कार्टुन), div.swiper.cartoon-slider, div.swiper-wrapper, div.swiper-slide.c-slide
+
+3. Save output to @output.json - Final output format: { "entertainment_news": [ { "title", "image_url", "category", "author" } ], "cartoon_of_the_day": { "title", "image_url", "author" } }
+
+4. Error in terminal - pasted terminal error log for debugging - @c:\..........\ekantipur-scraper\terminals\2.txt
+
+
+
+# Conceptual / debugging prompts in Claude
+
+1. How does uv relate to Cursor and Playwright?
+
+2. What is the initial wait for in Playwright?
+
+3. When and why use page.locator() vs query_selector?
+
+4. Got ModuleNotFoundError for playwright — fix?
+
+5. Got asyncio loop error with sync Playwright API — fix?
+
+6. Got TimeoutError on wait_for_selector div.section-news — fix?
+
+7. Got TimeoutError on wait_for_selector div.swiper.cartoon-slider — fix?
+
+8. Where is MCP used?
+
+9. Explanation of page.goto, wait_for_selector, query_selector_all, text_content, get_attribute, looping through cards, null handling, locators
+
+10. Where are locators used?
+
+11. Can I do all scraping without MCP server?
+
+12. Is page.locator() better than query_selector for this task?
